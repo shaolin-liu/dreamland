@@ -31,11 +31,11 @@ public class DruidDESDataSource extends DruidDataSource{
 
     @Override
     public void setPassword(String password) {
-        try {
-            password = ConfigTools.decrypt(password);
-        } catch (Exception e) {
-            logger.error("数据源密码解密失败, 原密码：{}", password, e);
-        }
+//        try {
+//            password = ConfigTools.decrypt(password);
+//        } catch (Exception e) {
+//            logger.error("数据源密码解密失败, 原密码：{}", password, e);
+//        }
         super.setPassword(password);
     }
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org/DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 开启驼峰配置 -->
+    <settings>
+        <setting name="mapUnderscoreToCameCase" value="true"/>
+    </settings>
+
+    <!-- 别名 -->
+    <typeAliases>
+        <!-- 默认别名为: javabean的首字母小写的非限定类名来作为它的别名 -->
+        <package name="com.neo.blog.entity"/>
+    </typeAliases>
+
+</configuration>
